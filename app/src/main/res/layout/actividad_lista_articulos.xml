@@ -28,6 +28,7 @@
 
     </android.support.design.widget.AppBarLayout>
 
+
     <FrameLayout
         android:id="@+id/contenedor_lista"
         android:layout_width="@dimen/ancho_panel_lista"
