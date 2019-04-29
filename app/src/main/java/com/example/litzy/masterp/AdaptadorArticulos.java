@@ -1,6 +1,7 @@
 package com.example.litzy.masterp;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,9 +18,9 @@ public class AdaptadorArticulos extends RecyclerView.Adapter<AdaptadorArticulos.
 
 
     public AdaptadorArticulos(List<ModeloArticulo.Articulo> items,
-                              AdapterView.OnItemClickListener escuchaClicksExterna) {
+                              OnItemClickListener escuchaClicksExterna) {
         valores = items;
-        this.escuchaClicksExterna = (OnItemClickListener) escuchaClicksExterna;
+        this.escuchaClicksExterna = escuchaClicksExterna;
     }
     @NonNull
     @Override
@@ -79,6 +80,7 @@ public class AdaptadorArticulos extends RecyclerView.Adapter<AdaptadorArticulos.
 
         @Override
         public void onClick(View v) {
+            Log.d("Click Item", "Si esta reconociendo eñ click " + obtenerIdArticulo(getAdapterPosition()));
             escuchaClicksExterna.onClick(this, obtenerIdArticulo(getAdapterPosition()));
         }
     }

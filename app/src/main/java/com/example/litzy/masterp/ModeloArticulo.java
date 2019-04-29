@@ -56,6 +56,8 @@ public class ModeloArticulo {
                 "Los frutos secos han sido desde la antiguedad la principal fuente de proteínas para muchas civilizaciones...",
                 "18 de Enero", "http://www.puntosingular.mx/imagenes/articulo9.jpg"));
 
+
+
     }
 
     @NonNull

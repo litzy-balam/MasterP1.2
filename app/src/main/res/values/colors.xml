@@ -3,4 +3,5 @@
     <color name="colorPrimary">#EC407A</color>
     <color name="colorPrimaryDark">#c2185B</color>
     <color name="colorAccent">#26C6DA</color>
+    <color name="backgroundActividad">#FFF</color>
 </resources>

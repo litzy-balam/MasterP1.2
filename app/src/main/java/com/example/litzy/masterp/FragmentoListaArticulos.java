@@ -49,7 +49,7 @@ public class FragmentoListaArticulos extends Fragment
 
 
     private void prepararLista(@NonNull RecyclerView recyclerView) {
-        recyclerView.setAdapter(new AdaptadorArticulos(ModeloArticulo.ITEMS, (AdapterView.OnItemClickListener) this));
+        recyclerView.setAdapter(new AdaptadorArticulos(ModeloArticulo.ITEMS, this));
     }
 
     @Override
@@ -68,10 +68,14 @@ public class FragmentoListaArticulos extends Fragment
         super.onDetach();
         escucha = null;
     }
-
+    public void cargarDetalle(String idArticulo){
+        if(escucha!=null){
+            escucha.alSeleccionarItem(idArticulo);
+        }
+    }
     @Override
     public void onClick(AdaptadorArticulos.ViewHolder viewHolder, String idArticulo) {
-
+    cargarDetalle(idArticulo);
     }
 
     public interface EscuchaFragmento {

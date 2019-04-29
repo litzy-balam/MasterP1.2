@@ -1,7 +1,8 @@
 <resources>
     <string name="app_name">MasterP</string>
-    <string name="appbar_scrolling_view_behavior">no se</string>
+
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="lorem">No pude copiar lo que dice en la imagen porque no veia y entendia lo que decia pero esto es para que no quede un espacio blanco y feo</string>
 </resources>
